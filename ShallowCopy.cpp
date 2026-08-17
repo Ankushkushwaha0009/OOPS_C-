@@ -14,6 +14,7 @@ int main(){
 
     Student s1(100);
     Student s2 = s1;
-    cout << *s1.age << " " << s2.age << endl;
+    *s2.age = 99 ; 
+    cout << *s1.age << " " << *s2.age << endl;
     return 0;
 }
