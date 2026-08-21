@@ -10,6 +10,9 @@ public:
     }
     friend void funct(Student s);
 };
+
+//now we can be able to access the private value outside to Student class...
+
 void funct(Student s){
     cout << s.mark << endl;
 }
