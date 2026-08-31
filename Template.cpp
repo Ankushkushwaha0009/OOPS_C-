@@ -48,25 +48,50 @@
 
 // class template .....
 
+// #include<bits/stdc++.h>
+// using namespace std ; 
+// template < typename T > 
+// class Box  {
+//     public :  
+//        T value ;
+//        Box(T value)  {
+//          this -> value = value ; 
+//        }
+//        void show() {
+//         cout << value << endl;
+//     }
+// } ; 
+// int main() {
+//     Box < int > b1(100) ; 
+//     Box < float > b2(100.111) ; 
+//     Box <string> b3("ankush kushwaha") ; 
+//     b1.show() ; 
+//     b2.show() ; 
+//     b3.show() ; 
+//     return 0  ; 
+// }
+
+//practice --------------------------------
+
 #include<bits/stdc++.h>
-using namespace std ; 
+using namespace std; 
 template < typename T > 
-class Box  {
-    public :  
-       T value ;
-       Box(T value)  {
-         this -> value = value ; 
-       }
-       void show() {
-        cout << value << endl;
+class Calculator { 
+    public : 
+      T a  ; 
+      T b  ;
+    Calculator(T a , T b) {
+        this -> a = a ; 
+        this -> b = b  ; 
+    } 
+    T add() {
+        return a + b;
     }
-} ; 
+}  ; 
 int main() {
-    Box < int > b1(100) ; 
-    Box < float > b2(100.111) ; 
-    Box <string> b3("ankush kushwaha") ; 
-    b1.show() ; 
-    b2.show() ; 
-    b3.show() ; 
-    return 0  ; 
+    Calculator<int> c1(10, 20);
+    Calculator<double> c2(2.5, 3.5);
+    cout << c1.add() << endl;
+    cout << c2.add() << endl;
+    return 0;
 }
