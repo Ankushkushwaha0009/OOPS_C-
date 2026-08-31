@@ -71,7 +71,7 @@
 //     return 0  ; 
 // }
 
-//practice --------------------------------
+//ractice --------------------------------
 
 #include<bits/stdc++.h>
 using namespace std; 
