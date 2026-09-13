@@ -16,7 +16,6 @@
 
 //Example 2 ...............
 
-
 // #include <bits/stdc++.h>
 // using namespace std ; 
 // int divide( int a , int b) {
