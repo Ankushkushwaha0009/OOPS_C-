@@ -4,23 +4,19 @@ class Student
 {
 public:
     int *age;
-    Student(int a)
-    {
+    Student(int a) {
         age = new int(a); // storing the address
     }
     // copy construtor -> deep copy
-    Student(const Student &obj)
-    {
+    Student(const Student &obj){
         age = new int(*obj.age); // storing the address
     }
-    ~Student()
-    {
+    ~Student(){
         delete age;
     }
 };
 
-int main()
-{
+int main(){
     Student s1(1000);
     Student s2 = s1;
     *s2.age = 999;
